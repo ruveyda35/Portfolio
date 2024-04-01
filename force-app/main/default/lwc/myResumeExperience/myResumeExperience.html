@@ -1,0 +1,78 @@
+<template>
+<!--<div class="slds-col slds-size_1-of-1 text_align_center">
+        <h2 class="section_heading ">{details.HEADING1}</h2> 
+        </div>
+        <div class="slds-col slds-size_1-of-1">
+            <h2 class="section">{details.HEADING}</h2> 
+            </div>-->
+            
+        <lightning-layout class="container ">
+            <ul class="slds-var-m-top_medium slds-var-p-left_large summary_list slds-is-relative">
+            <template for:each={details.EXPERIENCES} for:item="item">
+                <lightning-layout-item  key={item}>
+                    <li  class="font16">{item}</li>
+                </lightning-layout-item>
+
+            </template>
+            </ul>
+            <ul class="slds-var-m-top_medium slds-var-p-left_large summary_list slds-is-relative">
+                <template for:each={details.KEYS_POINTS} for:item="item">
+                    <lightning-layout-item class="asd" key={item}>
+                        <li  class="font12">{item}</li>
+                    </lightning-layout-item>
+    
+                </template>
+                </ul>  
+                <!--<ul class="slds-var-m-top_medium ">
+                <template for:each={details.LIST} for:item="item">
+                    <lightning-layout-item  key={item}>
+                        <li  class="font1">{item}</li>
+                    </lightning-layout-item>
+    
+                </template>
+                </ul>-->
+                
+        </lightning-layout>
+        <div><h2 class="section">{details.HEADING}</h2>
+            <template for:each={details.LIST} for:item="tech">
+                <div key={tech} class="tech_tile">{tech}</div>
+            </template> </div>
+        <div>
+            <div class="slds-var-p-left_x-large slds-is-relative workExp_content">
+                <template for:each={details.EXPERIENCES1} for:item="item">
+                    <section key={item.DURATION} class="workExp_individual slds-is-relative">
+                        <h3 class="blue_color font17 fontWeight700">{item.ROLE}</h3>
+                        <div class="blue_color font17">{item.COMPANY_NAME}  ({item.DURATION})</div>
+                       
+                        <div class="slds-var-m-bottom_xx-large">
+                            <p>{item.DESCRIPTION}</p> 
+                            <h2 class="section2">{item.HEADER2}</h2> 
+                            <ul class="description_point_box">
+                                <template for:each={item.LIST1} for:item="point">
+                                    <li key={point}>{point}</li>
+                                </template>
+                            </ul>
+                            <h2 class="section3">{item.HEADER3}</h2> 
+                            <h2 class="section2">{item.HEADER4}</h2> 
+                            <p>{item.DESCRIPTION1}</p> 
+                            <h2 class="section2">{item.HEADER5}</h2> 
+                            <h2 class="section2">{item.HEADER6}</h2> 
+                            <h2 class="section3">{item.HEADER7}</h2>
+                            <p>{item.DESCRIPTION2}</p>  
+                            <h2 class="section3">{item.HEADER8}</h2> 
+                            <p>{item.DESCRIPTION3}</p> 
+                            <h2 class="section3">{item.HEADER9}</h2> 
+                            <ul class="description_point_box">
+                                <template for:each={item.LIST3} for:item="point">
+                                    <li key={point}>{point}</li>
+                                </template>
+                            </ul>
+                            <p><i>{item.DESCRIPTION4}</i></p> 
+                            <h2 class="section10">{item.HEADER10}</h2> 
+                            <p><i>{item.DESCRIPTION5}</i></p> 
+                        </div>
+                    </section>
+                </template>
+            </div>
+        </div>
+</template>

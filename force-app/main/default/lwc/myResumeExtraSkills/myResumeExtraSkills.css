@@ -1,0 +1,15 @@
+/*
+.section_heading {
+    font-size: 1.25rem;
+    color: hsl(225, 65%, 29%);
+    width: 100%;
+    text-align: center;
+    background-color: aliceblue;
+}*/
+
+.section {
+    color: #1a3179;
+    font-weight: 100;
+    font-size: 1rem;
+    margin-top: 0px;
+}

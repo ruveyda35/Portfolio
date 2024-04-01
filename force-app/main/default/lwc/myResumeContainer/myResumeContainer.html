@@ -1,0 +1,48 @@
+<template>
+    
+        <div class="slds-var-p-around_medium header_color">
+            <c-my-resume-header
+            social-details={SOCIAL_LINKS}
+            user-details={RESUME_DATA.USER_DETAILS}
+            profile-image={PROFILE_IMAGE}
+            ></c-my-resume-header>
+        </div>
+        <div class="wrapper">
+            <div class="slds-var-p-around_medium">
+                <div class="slds-col slds-size_1-of-1 text_align_center">
+                    <h2 class="section_heading ">{RESUME_DATA.SKILLS_EXTRA.HEADING2}</h2> 
+                    </div>
+                <div class="slds-grid slds-wrap">
+                  
+                   <div class="slds-col slds-size_1-of-1 slds-medium-size_9-of-12 slds-large-size_9-of-12">
+                   <br>
+                    <c-my-resume-extra-skills details={RESUME_DATA.SKILLS_EXTRA}></c-my-resume-extra-skills>
+                      </div> 
+                      <div class="slds-col slds-size_1-of-1 slds-medium-size_3-of-12 slds-large-size_3-of-12">
+                   <br>
+                  
+                       <c-my-resume-skills details={RESUME_DATA.SKILLS_DATA}></c-my-resume-skills>
+              
+                   </div>
+       </div>
+       </div>
+        <div class="slds-var-p-around_medium">
+            <div class="slds-col slds-size_1-of-1 text_align_center">
+                <h2 class="section_heading ">{RESUME_DATA.ABOUT_ME.HEADING}</h2> 
+                </div>
+            <c-my-resume-summary details={RESUME_DATA.ABOUT_ME}></c-my-resume-summary>
+        </div>
+        <div class="slds-var-p-around_medium">
+            <div class="slds-col slds-size_1-of-1 text_align_center">
+                <h2 class="section_heading ">{RESUME_DATA.PROFESSIONAL_EXPERIENCE.HEADING1}</h2> 
+                </div>
+                <div class="slds-col slds-size_1-of-1">
+                    <c-my-resume-experience details={RESUME_DATA.PROFESSIONAL_EXPERIENCE}></c-my-resume-experience>
+                </div> 
+                <div class="slds-var-p-around_medium">
+                    <c-projects details={RESUME_DATA.PROJECTS}></c-projects>
+                </div>
+            </div> 
+           
+    </div>
+</template>

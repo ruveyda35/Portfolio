@@ -1,0 +1,104 @@
+<template>
+    <div class="slds-col slds-size_1-of-1 text_align_center">
+        <h2 class="section_heading ">{details.HEADING}</h2> 
+        </div> 
+        <div>
+            <div class="slds-var-p-left_x-large slds-is-relative workExp_content">
+                <template for:each={details.PROJECTS1} for:item="item">
+                    <section key={item.DURATION} class="workExp_individual slds-is-relative">
+                        <h3 class="blue_color font17 fontWeight700">{item.ROLE}</h3>
+                        <div class="blue_color font17">{item.COMPANY_NAME}  ({item.DURATION})</div>
+                        <div class="slds-var-m-bottom_xx-large">
+                            <p>{item.DESCRIPTION}</p> 
+                            <h2 class="section2">{item.HEADING1}</h2> 
+                            <ul class="description_point_box">
+                                <template for:each={item.LIST} for:item="point">
+                                    <li key={point}>{point}</li>
+                                </template>
+                            </ul>
+                            <h2 class="section2">{item.HEADING2}</h2> 
+                            <ul class="description_point_box">
+                                <template for:each={item.LIST1} for:item="point">
+                                    <li key={point}>{point}</li>
+                                </template>
+                            </ul>
+                            <h2 class="section2">{item.HEADING3}</h2> 
+                            <p>{item.DESCRIPTION1}</p> 
+                            <h2 class="section2">{item.HEADING4}</h2> 
+                            <p>{item.DESCRIPTION2}</p> 
+                            <p><i>{item.DESCRIPTION3}</i></p> 
+                        </div>
+                        <h3 class="blue_color font17 fontWeight700">{item.ROLE1}</h3>
+                        <div class="blue_color font17">{item.COMPANY_NAME1}  ({item.DURATION1})</div>
+                        <div class="slds-var-m-bottom_xx-large">
+                            <h2 class="section2">{item.HEADING5}</h2> 
+                            <p>{item.DESCRIPTION4}</p> 
+                            <h2 class="section2">{item.HEADING6}</h2> 
+                            <p>{item.DESCRIPTION5}</p> 
+                            <h2 class="section2">{item.HEADING7}</h2> 
+                            <ul class="description_point_box">
+                                <template for:each={item.LIST3} for:item="point">
+                                    <li key={point}>{point}</li>
+                                </template>
+                            </ul>  
+                            <h2 class="section2">{item.HEADING8}</h2> 
+                            <ul class="description_point_box">
+                                <template for:each={item.LIST4} for:item="point">
+                                    <li key={point}>{point}</li>
+                                </template>
+                            </ul>
+                            <p><i>{item.DESCRIPTION6}</i></p>
+                        </div>
+                        <h3 class="blue_color font17 fontWeight700">{item.ROLE2}</h3>
+                        <div class="blue_color font17">{item.COMPANY_NAME2}  ({item.DURATION2})</div>
+                        <div class="slds-var-m-bottom_xx-large">
+                            <p>{item.DESCRIPTION7}</p>
+                            <ul class="description_point_box">
+                                <template for:each={item.DESCRIPTION9} for:item="point">
+                                    <li key={point}>{point}</li>
+                                </template>
+                            </ul>
+                            <h2 class="section2">{item.HEADING9}</h2> 
+                            <ul class="description_point_box">
+                                <template for:each={item.DESCRIPTION8} for:item="point">
+                                    <li key={point}>{point}</li>
+                                </template>
+                            </ul>
+                            
+                        </div>
+                    </section>
+                </template>
+            </div>
+        </div>
+        <div class="slds-col slds-size_1-of-1 text_align_center">
+            <h2 class="section_heading ">{details.HEADING10}</h2> 
+            </div>
+            <div class="slds-grid slds-wrap">
+            <div class="slds-col slds-size_1-of-2 text_align_center">
+                <h3 class="blue_color font17 fontWeight700">{details.ROLE3}</h3>
+                <div class="blue_color font17">{details.COMPANY_NAME3} </div>
+            </div> 
+            <div class="slds-col slds-size_1-of-2 text_align_center">
+                <div class="blue_color font18">{details.DURATION3} {details.COUNTRY} </div>
+                <div class="blue_color font17"></div>
+            </div>
+        </div>
+        <br>
+        <div class="slds-grid slds-wrap">
+            <div class="slds-col slds-size_1-of-2 text_align_center">
+                <h3 class="blue_color font17 fontWeight700">{details.ROLE4}</h3>
+                <div class="blue_color font17">{details.COMPANY_NAME4} </div>
+            </div> 
+            <div class="slds-col slds-size_1-of-2 text_align_center">
+                <div class="blue_color font18">{details.DURATION4} {details.COUNTRY2} </div>
+                <div class="blue_color font17"></div>
+            </div>
+        </div>
+        <div class="slds-col slds-size_1-of-1 text_align_center">
+            <h2 class="section_heading ">{details.HEADING11}</h2> 
+            </div>
+            <div class="slds-var-m-bottom_xx-large">
+                <p>{details.DESCRIPTION10}</p> 
+                <p>{details.DESCRIPTION11}</p>
+            </div>
+</template>

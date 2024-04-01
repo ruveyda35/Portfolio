@@ -1,0 +1,60 @@
+.font16 {
+    font-weight: bold;
+    font-size: small;
+}
+
+.font12 {
+    font-size: small;
+    font-style: italic;
+    width: 260px;
+}
+
+.font17 {
+    font-size: medium;
+    font-weight: bold;
+}
+/*
+.section_heading {
+    font-size: 1.25rem;
+    color: #1a3179;
+    width: 800px;
+    margin-left: 200px;
+    background-color: aliceblue;
+    text-align: center;
+}*/
+
+.section {
+    margin-left: 20px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+.font1 {
+    
+    font-style: italic;
+    margin-left: 100px;
+   
+    margin-top: 0px;
+}
+
+.section3 {
+    font-style: italic;
+    font-size: medium;
+    font-weight: 100;
+}
+
+.tech_tile{
+    background-color: rgb(103, 103, 158);
+     color: white;
+     padding: .25em .4em;
+     font-size: 75%;
+     font-weight: 700;
+     white-space: nowrap;
+     vertical-align: baseline;
+     padding-right: .6em;
+     padding-left: .6em;
+     border-radius: 10rem;
+     display: inline-block;
+     overflow-wrap: normal;
+     margin-left: 0.5rem;
+ }

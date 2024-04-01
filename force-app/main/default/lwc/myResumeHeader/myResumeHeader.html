@@ -1,0 +1,97 @@
+<template>
+    <header>
+      
+      <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-1">
+        <img src={profileImage} alt="profile pic"  class="profile_pic"/>
+     <h1 class="name1"> <span style="left: 50;">{userDetails.NAME}</span></h1>
+     <h1 class="rol"> <span style="left: 120;">{userDetails.ROLE}</span></h1>
+     <h4 class="not"> <span style="left: 20;">{userDetails.not}</span></h4>
+      </div>
+     <div class="slds-grid slds-wrap">
+      <div class="slds-col slds-size_9-of-12 "></div>
+      <div class="slds-col slds-size_3-of-12 slds-medium-size_3-of-12 slds-large-size_3-of-12 ">
+      <!-- <ul class="small_font">
+         <template for:each={socialDetails} for:item="item">
+             <li class="slds-var-m-bottom_small" key={item.type}>
+                 <a href={item.link} target="_blank" class="link">
+                  <img src={item.icon} alt={item.type} width="20px" class="slds-var-m-right_small"/>
+                 <span >{item.label}</span><br><span style="visibility: hidden;" >span etiketi</span>
+                
+                 </a>
+             </li>
+         </template>
+     </ul>-->
+     <a href={userDetails.link} target="_blank" class="link4">
+      <img src={userDetails.icon} alt={userDetails.type} width="20px" class="slds-var-m-right_small"/>
+     <span >{userDetails.label}</span>
+    
+     </a> 
+     <a href={userDetails.link1} target="_blank" class="link5">
+      <img src={userDetails.icon1} alt={userDetails.type1} width="20px" class="slds-var-m-right_small"/>
+     <span >{userDetails.label1}</span>
+    
+     </a>
+     <a href={userDetails.link2} target="_blank" class="link6">
+      <img src={userDetails.icon2} alt={userDetails.type2} width="20px" class="slds-var-m-right_small"/>
+     <span >{userDetails.label2}</span>
+    
+     </a>
+     <a href={phoneLink} class="link1">
+      <lightning-icon icon-name="utility:dialing" alternative-text="dialing!" size="x-small" title="dialing"
+          class="slds-var-m-right_small"></lightning-icon>
+     {userDetails.PHONE}
+      </a>
+      <a href={emailLink} class="link2">
+      <lightning-icon icon-name="utility:email" alternative-text="email!" size="x-small"
+        title="email" class="slds-var-m-right_small"></lightning-icon>
+        {userDetails.EMAIL}
+      </a>
+      <a href={konumLink} class="link3">
+        <lightning-icon icon-name="utility:checkin" alternative-text="checkin!" size="x-small" title="checkin"
+            class="slds-var-m-right_small"></lightning-icon>
+        {userDetails.KONUM}
+    </a>
+      </div>
+      
+     </div>
+    <!--<lightning-layout-item class="slds-col slds-size_1-of-6 ">
+      <a href={phoneLink} class="link1">
+        <lightning-icon icon-name="utility:dialing" alternative-text="dialing!" size="x-small" title="dialing"
+            class="slds-var-m-right_small"></lightning-icon>
+       {userDetails.PHONE}
+    </a>
+     </lightning-layout-item>
+     <lightning-layout-item class="slds-col slds-size_1-of-6 ">
+      <a href={emailLink} class="link2">
+        <lightning-icon icon-name="utility:email" alternative-text="email!" size="x-small"
+            title="email" class="slds-var-m-right_small"></lightning-icon>
+            {userDetails.EMAIL}
+    </a>
+     </lightning-layout-item>
+     <lightning-layout-item class="slds-col slds-size_1-of-6 ">
+      <a href={konumLink} class="link3">
+        <lightning-icon icon-name="utility:checkin" alternative-text="checkin!" size="x-small" title="checkin"
+            class="slds-var-m-right_small"></lightning-icon>
+        {userDetails.KONUM}
+    </a>
+     </lightning-layout-item>
+     <lightning-layout-item class="slds-col slds-size_3-of-6 ">
+      <div class="social-links-container">
+        <template for:each={socialDetails} for:item="item">
+          <lightning-layout-item class=" slds-var-m-bottom_small" key={item.type}>
+             
+                  <a href={item.link} target="_blank" rel="noopener noreferrer" class="link">
+                  <img src={item.icon} alt={item.type} width="20px" class=" social-icon slds-var-m-left_small" />
+                  {item.label}
+              </a>
+            
+              
+          </lightning-layout-item>
+        </template>
+      </div>
+     </lightning-layout-item>--> 
+    
+     
+     
+    </header>
+</template>

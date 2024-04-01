@@ -1,0 +1,17 @@
+<template>
+    <section class="slds-var-p-left_medium">
+       <!-- <div class="slds-col slds-size_1-of-1 text_align_center">
+            <h2 class="section_heading ">{details.HEADING2}</h2> 
+            </div>-->
+        <h3 class="section">{details.HEADING1}</h3>
+        <div>
+            <ul class="description_point_box">
+                <template for:each={details.LIST} for:item="point">
+                    <li key={point}>{point}</li>
+                </template>
+            </ul>
+        </div>
+        
+        
+    </section>
+</template>

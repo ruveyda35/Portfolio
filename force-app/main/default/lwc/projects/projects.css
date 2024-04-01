@@ -1,0 +1,22 @@
+.section_heading {
+    font-size: 1.25rem;
+    color: hsl(225, 65%, 29%);
+    width: 100%;
+    text-align: center;
+    background-color: aliceblue;
+}
+.section2 {
+    font-style: italic;
+    font-size: medium;
+    font-weight: 100;
+}
+
+.font17 {
+    font-size: medium;
+    font-weight: bold;
+}
+
+.font18 {
+    
+    text-align: right;
+}

@@ -1,0 +1,115 @@
+<template>
+    <div class="slds-col slds-size_2-of-4 text_align_center" style="background-color: rgb(42, 120, 184);">
+        <div class="slds-var-p-around_medium header_color">
+           
+        <div class="slds-col slds-size_2-of-4 slds-medium-size_2-of-4 slds-large-size_2-of-4">
+            <img src={sforce} alt="profile pic" class="profile_pic" style="width: 220px; margin-left: 220px; padding-left: 70px; position: relative;" /></div></div>
+<br>
+        <div style="background:white;padding:4px">
+            <div class="slds-m-around_medium">
+                    <!-- Input field with icon -->
+                    <div class="slds-form-element">
+                        <!--Parent div element, with display:flex style -->
+                        <div class="aaa slds-form-element__control slds-input-icon" style="display: flex;position: relative;">
+                            <lightning-icon icon-name="utility:user" style="position: absolute;padding: 5px;" size="x-small" alternative-text="user"></lightning-icon>
+                            <input type="text" id="inputField" style="padding-left: 30px" class="slds-input" placeholder="First Name"  onchange={handleFirstName} />
+                        </div>
+                    </div>
+                </div>
+            </div>
+  
+            <br>
+            <div style="background:white;padding:4px">
+              <div class="slds-m-around_medium">
+                      <!-- Input field with icon -->
+                      <div class="slds-form-element">
+                          <!--Parent div element, with display:flex style -->
+                          <div class="slds-form-element__control slds-input-icon" style="display: flex;position: relative;">
+                              <lightning-icon icon-name="utility:user" style="position: absolute;padding: 5px;" size="x-small" alternative-text="user"></lightning-icon>
+                              <input type="text" id="inputField1" style="padding-left: 30px; border: none; " class="slds-input" placeholder="Last Name"  onchange={handleLastName} />
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <br>
+  
+              <div style="background:white;padding:4px">
+                <div class="slds-m-around_medium">
+                        <!-- Input field with icon -->
+                        <div class="slds-form-element">
+                            <!--Parent div element, with display:flex style -->
+                            <div class="slds-form-element__control slds-input-icon" style="display: flex;position: relative;">
+                                <lightning-icon icon-name="utility:email" style="position: absolute;padding: 5px;" size="x-small" alternative-text="email"></lightning-icon>
+                                <input  type="email"  id="inputField2" style="padding-left: 30px; border none" class="slds-input" placeholder="Email"  onchange={handleMail} />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+  
+                <br>
+                <div style="background:white;padding:4px">
+                    <div class="slds-m-around_medium">
+                            <!-- Input field with icon -->
+                            <div class="slds-form-element">
+                                <!--Parent div element, with display:flex style -->
+                                <div class="slds-form-element__control slds-input-icon" style="display: flex;position: relative;">
+                                  <lightning-icon icon-name='utility:company' alternative-text='company'  title='company' style="position: absolute;padding: 5px;" size="x-small" ></lightning-icon>
+                                    <input  type="email"  id="inputField3" style="padding-left: 30px" class="slds-input" placeholder="Cty"  onchange={handleCty} />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+      
+                    <br>
+
+                    <div style="background:white;padding:4px">
+                        <div class="slds-m-around_medium">
+                                <!-- Input field with icon -->
+                                <div class="slds-form-element" style="height: 40px; border: none;" >
+                                    <div class="slds-form-element__control slds-combobox-icon" style="position: relative; border: none;">
+                                    
+                                        <lightning-combobox  
+                                           class="slds-align-middle" 
+                                            options={Subject1}
+                                            value={Subject}
+                                            style="padding-left: 8px; border: none;"
+                                            id="inputField4"
+                                            onchange={handlePicklist}>
+                                        </lightning-combobox>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                        <br>
+
+                        <div style="background:white;padding:4px">
+                            <div class="slds-m-around_medium">
+                               
+                                            <lightning-combobox   
+                                                options={Status1}
+                                                value={Status}
+                                                style="padding-left: 7px; border: none;"
+                                                id="inputField5"
+                                                onchange={handleStatus}>
+                                                placeholder= "status"
+                                            </lightning-combobox>
+                                
+                                </div>
+                            </div>
+                   <br>
+                
+          <lightning-layout 
+          horizontal-align="center"
+            vertical-align="start"> 
+       <lightning-button 
+       variant="neutral"
+         label="Sign Up"
+         onclick={handleClick} 
+       ></lightning-button>
+        
+        </lightning-layout>
+</div>
+   
+    
+</template>
